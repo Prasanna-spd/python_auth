@@ -1,6 +1,6 @@
 from typing import Optional
 from pydantic import BaseModel, EmailStr
-from models import Role
+from app.models import Role
 
 
 class UserCreate(BaseModel):

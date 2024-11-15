@@ -1,6 +1,6 @@
 from pymongo.database import Database
-from config import USERS_COLLECTION
-from schemas import UserCreate, UserUpdate
+from app.config import USERS_COLLECTION
+from app.schemas import UserCreate, UserUpdate
 from app.auth import get_password_hash
 
 

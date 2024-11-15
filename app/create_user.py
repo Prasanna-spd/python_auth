@@ -1,8 +1,8 @@
 import os
 from pymongo import MongoClient
-from config import MONGODB_URI, DATABASE_NAME, USERS_COLLECTION
+from app.config import MONGODB_URI, DATABASE_NAME, USERS_COLLECTION
 from app.auth import get_password_hash
-from models import Role
+from app.models import Role
 
 
 def create_initial_user():

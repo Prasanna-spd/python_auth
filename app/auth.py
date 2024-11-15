@@ -2,14 +2,14 @@ from datetime import datetime, timedelta
 from typing import Optional
 from jose import JWTError, jwt
 from passlib.context import CryptContext
-from  config import SECRET_KEY, ALGORITHM, ACCESS_TOKEN_EXPIRE_MINUTES
-from  models import TokenData
+from  app.config import SECRET_KEY, ALGORITHM, ACCESS_TOKEN_EXPIRE_MINUTES
+from  app.models import TokenData
 from fastapi import Depends, HTTPException, status
 from fastapi.security import OAuth2PasswordBearer
-from  database import db
-from  models import User
+from  app.database import db
+from  app.models import User
 from pymongo.database import Database
-from config import USERS_COLLECTION
+from app.config import USERS_COLLECTION
 
 
 pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
