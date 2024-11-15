@@ -2,7 +2,7 @@ from fastapi import APIRouter, Depends, HTTPException
 from typing import List
 from schemas import UserCreate, UserUpdate
 from models import User, Role
-from auth import get_current_active_user
+from app.auth import get_current_active_user
 from database import db
 from crud import (
     create_user, get_user_by_username,

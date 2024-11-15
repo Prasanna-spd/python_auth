@@ -1,7 +1,7 @@
 import os
 from pymongo import MongoClient
 from config import MONGODB_URI, DATABASE_NAME, USERS_COLLECTION
-from auth import get_password_hash
+from app.auth import get_password_hash
 from models import Role
 
 

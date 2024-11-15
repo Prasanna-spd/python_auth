@@ -1,7 +1,7 @@
 from pymongo.database import Database
 from config import USERS_COLLECTION
 from schemas import UserCreate, UserUpdate
-from auth import get_password_hash
+from app.auth import get_password_hash
 
 
 def get_user_by_username(db: Database, username: str):
